@@ -2,13 +2,16 @@
 # URL: pypi.org
 # pip is a package manager for Python packages.
 # pip install package_name is used to install a package from PyPI.
-print("Welcome to the Package Example!")
+# print("Welcome to the Package Example!")
 
 # install pip command
 # pip install package_name
 
 import cowsay
-import say
+import sys
 
-if len(sys.argv) == 2:
-    cowsay.cow("Hello "+ sys.argv[1])
+if len(sys.argv) == 3:
+    # cowsay.cow("Hello "+ sys.argv[1] +" "+sys.argv[2])
+    cowsay.trex("Hello " + sys.argv[1] + " " + sys.argv[2])
+
+
